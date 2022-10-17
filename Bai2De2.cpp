@@ -18,7 +18,9 @@ int main(){
 	for(int i = 0; i < n/2; i++){
 		for(int j = n; i > n/2; j--){
 			if(sto(i) == true && sto(j) == true){
+				if(i + j == n){
 					cout << i << ";" << j << endl;
+				}
 			}
 		}
 	}
